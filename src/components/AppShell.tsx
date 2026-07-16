@@ -81,9 +81,9 @@ export function AppShell({ children }: { children: ReactNode }) {
       </aside>
 
       {/* Right column */}
-      <div className="flex min-w-0 flex-1 flex-col h-[100dvh] md:h-screen overflow-hidden">
+      <div className="flex min-w-0 flex-1 flex-col h-[100dvh] md:h-screen overflow-y-hidden">
         {/* Mobile top header */}
-        <header className="flex h-14 shrink-0 items-center justify-between border-b border-border bg-background/90 px-4 backdrop-blur md:hidden">
+        <header className="will-change-transform flex h-14 shrink-0 items-center justify-between border-b border-border bg-background/90 px-4 backdrop-blur md:hidden">
           <Link to="/dashboard" className="flex items-center gap-2">
             <BrandMark className="h-5 w-5 text-primary" />
             <span className="text-base font-semibold tracking-tight">Cortex</span>
@@ -104,7 +104,7 @@ export function AppShell({ children }: { children: ReactNode }) {
 
         {/* Mobile bottom tab bar */}
         <nav
-          className="fixed inset-x-0 bottom-0 z-40 flex h-16 items-stretch border-t border-border bg-background/95 pb-[env(safe-area-inset-bottom)] backdrop-blur md:hidden"
+          className="will-change-transform fixed inset-x-0 bottom-0 z-40 flex h-16 items-stretch border-t border-border bg-background/95 pb-[env(safe-area-inset-bottom)] backdrop-blur md:hidden"
           aria-label="Primary"
         >
           {nav.map((n) => {
