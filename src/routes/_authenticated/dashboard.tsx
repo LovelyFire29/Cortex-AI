@@ -77,7 +77,7 @@ function Dashboard() {
   const processing = data?.filter((d) => d.status === "processing").length ?? 0;
 
   return (
-    <div className="mx-auto flex h-full max-w-5xl flex-col gap-8 overflow-x-hidden overflow-y-auto p-6 md:p-10">
+    <div className="mx-auto flex h-full w-full max-w-5xl flex-col gap-8 overflow-y-auto p-6 md:p-10">
       <header className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4">
         <div className="min-w-0">
           <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">

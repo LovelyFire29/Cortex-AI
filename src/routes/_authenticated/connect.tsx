@@ -73,7 +73,7 @@ function ConnectPage() {
   }
 
   return (
-    <div className="mx-auto h-full max-w-3xl overflow-x-hidden overflow-y-auto px-6 py-10">
+    <div className="mx-auto h-full w-full max-w-3xl overflow-y-auto px-6 py-10">
         <header className="mb-8">
           <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
             Agent integrations
