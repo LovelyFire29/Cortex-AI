@@ -73,15 +73,15 @@ function ConnectPage() {
   }
 
   return (
-    <div className="mx-auto h-full max-w-3xl overflow-y-auto px-6 py-10">
+    <div className="mx-auto h-full max-w-3xl overflow-x-hidden overflow-y-auto px-6 py-10">
         <header className="mb-8">
           <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
             Agent integrations
           </p>
-          <h1 className="mt-1 text-2xl font-semibold tracking-tight">
+          <h1 className="mt-1 max-w-full break-words text-2xl font-semibold tracking-tight">
             Connect Cortex to your AI assistant
           </h1>
-          <p className="mt-2 max-w-xl text-sm text-muted-foreground">
+          <p className="mt-2 max-w-xl break-words text-sm text-muted-foreground">
             Query your uploaded documents from ChatGPT, Claude, or any MCP-compatible
             client. Sign in once with your Cortex account — your assistant then acts
             as you and only sees your own notes.

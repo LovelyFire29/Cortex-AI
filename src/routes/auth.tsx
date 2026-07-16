@@ -24,8 +24,8 @@ function AuthPage() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    supabase.auth.getSession().then(({ data }) => {
-      if (data.session) {
+    supabase.auth.getUser().then(({ data, error }) => {
+      if (!error && data.user) {
         if (dest.startsWith("/") && !dest.startsWith("//")) {
           window.location.replace(dest);
         } else {

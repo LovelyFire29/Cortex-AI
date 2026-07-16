@@ -77,14 +77,14 @@ function Dashboard() {
   const processing = data?.filter((d) => d.status === "processing").length ?? 0;
 
   return (
-    <div className="mx-auto flex h-full max-w-5xl flex-col gap-8 p-6 md:p-10">
+    <div className="mx-auto flex h-full max-w-5xl flex-col gap-8 overflow-x-hidden overflow-y-auto p-6 md:p-10">
       <header className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4">
         <div className="min-w-0">
           <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
             Library
           </p>
-          <h1 className="mt-1 text-3xl font-semibold tracking-tight">Your knowledge base</h1>
-          <p className="mt-2 max-w-lg text-sm text-muted-foreground">
+          <h1 className="mt-1 max-w-full break-words text-3xl font-semibold tracking-tight">Your knowledge base</h1>
+          <p className="mt-2 max-w-lg break-words text-sm text-muted-foreground">
             Every document you upload is chunked, embedded, and searchable from chat — grounded in
             your own words.
           </p>
