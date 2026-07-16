@@ -91,7 +91,7 @@ function UploadPage() {
   const pending = items.filter((i) => i.status === "pending").length;
 
   return (
-    <div className="mx-auto flex h-full w-full max-w-3xl flex-col gap-8 p-6 md:p-10">
+    <div className="mx-auto flex h-full w-full max-w-3xl flex-col gap-8 overflow-y-auto p-6 md:p-10">
       <header>
         <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
           Ingest

@@ -81,7 +81,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       </aside>
 
       {/* Right column */}
-      <div className="flex min-w-0 flex-1 flex-col h-[100dvh] md:h-screen overflow-y-hidden">
+      <div className="flex min-w-0 flex-1 flex-col h-[100dvh] md:h-screen overflow-y-auto">
         {/* Mobile top header */}
         <header className="will-change-transform flex h-14 shrink-0 items-center justify-between border-b border-border bg-background/90 px-4 backdrop-blur md:hidden">
           <Link to="/dashboard" className="flex items-center gap-2">
