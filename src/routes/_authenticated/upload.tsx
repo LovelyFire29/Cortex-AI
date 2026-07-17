@@ -172,7 +172,8 @@ function UploadPage() {
             </div>
           </div>
 
-          <ul className="divide-y divide-border overflow-hidden rounded-xl border border-border bg-card/60">
+          <div className="shrink-0 overflow-hidden rounded-xl border border-border bg-card/60">
+          <ul className="divide-y divide-border">
             {items.map((it, idx) => {
               const { Icon, tone } = fileMeta(it.file.name);
               return (
@@ -214,6 +215,7 @@ function UploadPage() {
               );
             })}
           </ul>
+          </div>
 
           {items.every((i) => i.status === "done" || i.status === "error") &&
             !processing && (

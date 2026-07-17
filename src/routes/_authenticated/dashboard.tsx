@@ -102,7 +102,7 @@ function Dashboard() {
         <Stat label="Processing" value={processing} isLoading={isLoading} muted />
       </div>
 
-      <div className="overflow-hidden rounded-xl border border-border bg-card/60">
+      <div className="shrink-0 overflow-hidden rounded-xl border border-border bg-card/60">
         <div className="flex items-center justify-between border-b border-border px-5 py-3">
           <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             Documents
