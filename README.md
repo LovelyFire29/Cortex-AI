@@ -4,7 +4,7 @@ A private, retrieval-augmented knowledge assistant. Upload your notes and docume
 
 Cortex also exposes itself as an **MCP (Model Context Protocol) server**, so Claude Desktop, Claude Code, or ChatGPT can query your personal knowledge base directly.
 
-**Live demo:** _add your Vercel URL here_
+**Live demo:** https://cortex29.vercel.app
 **Repo:** https://github.com/LovelyFire29/Cortex-AI
 
 ---
